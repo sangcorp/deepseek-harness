@@ -1,12 +1,18 @@
 import type { IconProps } from './icons/props.ts'
 
+/** Display options for the official brand wordmark. */
+export interface BrandWordmarkProps extends IconProps {
+  /** Whether to include the leading whale mark; defaults to true. */
+  includeMark?: boolean | undefined
+}
+
 /**
  * Render the full SangAI Harness brand wordmark.
  * @param props.size - height in px (default 24).
  * @param props.className - extra class for layout placement.
  * @returns the wordmark component.
  */
-export function BrandWordmark({ size = 24, className }: IconProps) {
+export function BrandWordmark({ size = 24, className }: BrandWordmarkProps) {
   return (
     <div
       className={className}
