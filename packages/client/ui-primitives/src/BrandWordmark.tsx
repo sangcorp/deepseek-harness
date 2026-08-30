@@ -7,7 +7,7 @@ export interface BrandWordmarkProps extends IconProps {
 }
 
 /**
- * Render the full SangAI Harness brand wordmark.
+ * Render the full SangAI Deepseek brand wordmark.
  * @param props.size - height in px (default 24).
  * @param props.className - extra class for layout placement.
  * @returns the wordmark component.
@@ -41,7 +41,7 @@ export function BrandWordmark({ size = 24, className }: BrandWordmarkProps) {
           color: 'var(--dsw-alias-label-primary, currentColor)',
         }}
       >
-        SangAI Harness
+        SangAI Deepseek
       </span>
     </div>
   )
